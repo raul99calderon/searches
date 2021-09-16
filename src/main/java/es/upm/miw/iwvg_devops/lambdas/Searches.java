@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class Searches {
+public class Searches { //
 
     private Stream<User> filterByUserName(String name) {
         return new UsersDatabase().findAll()
