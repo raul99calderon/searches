@@ -28,6 +28,8 @@
     </licenses>
 
     <properties>
+        <sonar.organization>raul99calderon</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <!-- Encode -->
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
