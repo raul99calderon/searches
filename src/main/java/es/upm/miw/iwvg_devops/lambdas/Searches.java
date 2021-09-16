@@ -49,9 +49,7 @@ public class Searches { //
 
     public Stream<Integer> findFractionNumeratorByUserFamilyName(String familyName) {
         return new UsersDatabase().findAll()
-                .peek(x -> LogManager.getLogger(this.getClass()).info("before: " + x))
                 .filter(user -> familyName.equals(user.getFamilyName()))
-                .peek(x -> LogManager.getLogger(this.getClass()).info("after: " + x))
                 .flatMap(user -> user.getFractions()
                         .stream())
                 .map(Fraction::getNumerator);
